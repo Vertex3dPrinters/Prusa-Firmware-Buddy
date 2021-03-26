@@ -195,3 +195,53 @@ public:
     MI_DEVHASH_IN_QR();
     virtual void OnChange(size_t old_index) override;
 };
+
+class MI_VERTEX : public WI_LABEL_t {
+    static constexpr const char *const label = N_("Vertex");
+
+public:
+    MI_VERTEX();
+
+protected:
+    virtual void click(IWindowMenu &window_menu) override;
+};
+
+class MI_VERTEX_ABOUT : public WI_LABEL_t {
+    static constexpr const char *const label = N_("Adapted by");
+
+public:
+    MI_VERTEX_ABOUT();
+
+protected:
+    virtual void click(IWindowMenu &window_menu) override;
+};
+
+class MI_VERTEX_COMMUNITY : public WI_LABEL_t {
+    static constexpr const char *const label = N_("Community");
+
+public:
+    MI_VERTEX_COMMUNITY();
+
+protected:
+    virtual void click(IWindowMenu &window_menu) override;
+};
+
+class MI_VERTEX_GITHUB : public WI_LABEL_t {
+    static constexpr const char *const label = N_("GitHub");
+
+public:
+    MI_VERTEX_GITHUB();
+
+protected:
+    virtual void click(IWindowMenu &window_menu) override;
+};
+
+class MI_VERTEX_WEB : public WI_LABEL_t {
+    static constexpr const char *const label = N_("Web Site");
+
+public:
+    MI_VERTEX_WEB();
+
+protected:
+    virtual void click(IWindowMenu &window_menu) override;
+};

@@ -94,4 +94,8 @@ enum {
     IDR_PNG_flag_it,
     IDR_PNG_flag_pl,
     IDR_PNG_sheet_profile,
+    IDR_PNG_adapted_by,
+    IDR_PNG_vertex_community,
+    IDR_PNG_vertex_web,
+    IDR_PNG_vertex_github,
 };

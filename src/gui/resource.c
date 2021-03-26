@@ -94,6 +94,12 @@
 #include "res/cc/png_flag_pl.c"
 
 #include "res/cc/png_sheets_profile_16px.c"
+
+#include "res/cc/png_adapted_by.c"
+#include "res/cc/png_vertex_community.c"
+#include "res/cc/png_vertex_web.c"
+#include "res/cc/png_vertex_github.c"
+
 RESOURCE_TABLE_BEGIN
 RESOURCE_ENTRY_NUL() //IDR_NULL
 //fonts
@@ -185,4 +191,9 @@ RESOURCE_ENTRY_PNG(png_flag_fr)
 RESOURCE_ENTRY_PNG(png_flag_it)
 RESOURCE_ENTRY_PNG(png_flag_pl)
 RESOURCE_ENTRY_PNG(png_sheets_profile_16px)
+
+RESOURCE_ENTRY_PNG(png_adapted_by)
+RESOURCE_ENTRY_PNG(png_vertex_community)
+RESOURCE_ENTRY_PNG(png_vertex_web)
+RESOURCE_ENTRY_PNG(png_vertex_github)
 RESOURCE_TABLE_END
