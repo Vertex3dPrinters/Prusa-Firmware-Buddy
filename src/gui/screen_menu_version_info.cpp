@@ -40,16 +40,16 @@ ScreenMenuVersionInfo::ScreenMenuVersionInfo()
     //=============VARIABLES=================
 
     uint8_t board_version[3];
-    char serial_numbers[15];
+    char serial_numbers[15] = "VTX50417300720";
     const version_t *bootloader = (const version_t *)BOOTLOADER_VERSION_ADDRESS;
 
     //=============ACCESS IN ADDR=================
     for (uint8_t i = 0; i < 3; i++) {
         board_version[i] = *(volatile uint8_t *)(OTP_START_ADDR + i);
     }
-    for (uint8_t i = 0; i < 14; i++) {
-        serial_numbers[i] = *(volatile char *)(SERIAL_NUM_ADDR + i);
-    }
+    // for (uint8_t i = 0; i < 14; i++) {
+    //     serial_numbers[i] = *(volatile char *)(SERIAL_NUM_ADDR + i);
+    // }
     serial_numbers[14] = '\0';
 
     //=============SET TEXT================
