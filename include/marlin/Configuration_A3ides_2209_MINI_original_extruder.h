@@ -657,7 +657,7 @@
  */
 //#define DEFAULT_AXIS_STEPS_PER_UNIT   { 100, 100, 400, 280 } //E0 280 295
 #define DEFAULT_AXIS_STEPS_PER_UNIT \
-    { 100, 100, 400, 415 } //E0 280 295
+    { 100, 100, 400, 325 } //E0 280 295
 //#define DEFAULT_AXIS_STEPS_PER_UNIT   { 800, 800, 3200, 1120 } //E0 280 295
 //#define DEFAULT_AXIS_STEPS_PER_UNIT   { 100, 100, 400, 1120 } //E0 280 295
 
@@ -934,7 +934,7 @@
 // @section extruder
 
 // For direct drive extruder v9 set to true, for geared extruder set to false.
-#define INVERT_E0_DIR false
+#define INVERT_E0_DIR true
 #define INVERT_E1_DIR false
 #define INVERT_E2_DIR false
 #define INVERT_E3_DIR false
