@@ -198,7 +198,7 @@ static const eeprom_vars_t eeprom_var_defaults = {
     {"Custom3", FLT_MAX },
     {"Custom4", FLT_MAX },
     0,               // EEVAR_SELFTEST_RESULT
-    1,               // EEVAR_DEVHASH_IN_QR
+    0,               // EEVAR_DEVHASH_IN_QR
     "",              // EEVAR__PADDING
     0xffffffff,      // EEVAR_CRC32
 };
