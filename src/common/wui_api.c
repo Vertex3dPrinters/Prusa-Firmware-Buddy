@@ -91,9 +91,10 @@ void get_printer_info(printer_info_t *printer_info) {
     // MAC ADDRESS
     parse_MAC_address(&printer_info->mac_address);
     // SERIAL NUMBER
-    for (int i = 0; i < OTP_SERIAL_NUMBER_SIZE; i++) {
-        printer_info->serial_number[i] = *(volatile char *)(OTP_SERIAL_NUMBER_ADDR + i);
-    }
+    // for (int i = 0; i < OTP_SERIAL_NUMBER_SIZE; i++) {
+    //     printer_info->serial_number[i] = *(volatile char *)(OTP_SERIAL_NUMBER_ADDR + i);
+    // }
+    strcpy(printer_info->serial_number,"VTX50417300720");
     // UUID - 96 bits
     volatile uint32_t *uuid_ptr = (volatile uint32_t *)OTP_STM32_UUID_ADDR;
     snprintf(printer_info->mcu_uuid, UUID_STR_LEN, "%08lx-%08lx-%08lx", *uuid_ptr, *(uuid_ptr + 1), *(uuid_ptr + 2));

@@ -199,3 +199,57 @@ void MI_DEVHASH_IN_QR::OnChange(size_t old_index) {
         eeprom_set_var(EEVAR_DEVHASH_IN_QR, variant8_ui8(0));
     }
 }
+
+/*****************************************************************************/
+//MI_VERTEX
+MI_VERTEX::MI_VERTEX()
+    : WI_LABEL_t(_(label), 0, is_enabled_t::yes, is_hidden_t::no) {
+}
+
+void MI_VERTEX::click(IWindowMenu & /*window_menu*/) {
+    Screens::Access()->Open(GetScreenMenuVertex);
+}
+
+/*****************************************************************************/
+//MI_VERTEX_ABOUT
+
+MI_VERTEX_ABOUT::MI_VERTEX_ABOUT()
+    : WI_LABEL_t(_(label), 0, is_enabled_t::yes, is_hidden_t::no) {
+}
+
+void MI_VERTEX_ABOUT::click(IWindowMenu & /*window_menu*/) {
+    Screens::Access()->Open(GetScreenAboutVertex);
+}
+
+/*****************************************************************************/
+//MI_VERTEX_COMMUNITY
+
+MI_VERTEX_COMMUNITY::MI_VERTEX_COMMUNITY()
+    : WI_LABEL_t(_(label), 0, is_enabled_t::yes, is_hidden_t::no) {
+}
+
+void MI_VERTEX_COMMUNITY::click(IWindowMenu & /*window_menu*/) {
+    Screens::Access()->Open(GetScreenCommunityVertex);
+}
+
+/*****************************************************************************/
+//MI_VERTEX_GITHUB
+
+MI_VERTEX_GITHUB::MI_VERTEX_GITHUB()
+    : WI_LABEL_t(_(label), 0, is_enabled_t::yes, is_hidden_t::no) {
+}
+
+void MI_VERTEX_GITHUB::click(IWindowMenu & /*window_menu*/) {
+    Screens::Access()->Open(GetScreenGithubVertex);
+}
+
+/*****************************************************************************/
+//MI_VERTEX_WEB
+
+MI_VERTEX_WEB::MI_VERTEX_WEB()
+    : WI_LABEL_t(_(label), 0, is_enabled_t::yes, is_hidden_t::no) {
+}
+
+void MI_VERTEX_WEB::click(IWindowMenu & /*window_menu*/) {
+    Screens::Access()->Open(GetScreenWebVertex);
+}

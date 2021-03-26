@@ -64,7 +64,8 @@ static const color_t COLOR_GREEN = 0x00008000L;
 static const color_t COLOR_PURPLE = 0x00800080L;
 static const color_t COLOR_TEAL = 0x00808000L;
 static const color_t COLOR_NAVY = 0x00800000L;
-static const color_t COLOR_ORANGE = 0x001B65F8L;
+//static const color_t COLOR_ORANGE = 0x001B65F8L;
+static const color_t COLOR_ORANGE = 0x0055CC00L;
 static const color_t COLOR_DARK_KHAKI = 0x006BD7DBL;
 
 typedef struct _resource_entry_t {
